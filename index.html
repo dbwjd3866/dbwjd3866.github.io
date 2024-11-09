@@ -1,151 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello, I'm YouJeong</title>
     <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/ffdaffa009.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ffdaffa009.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- css -->
 
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/design.css">
-    <link rel="stylesheet" type="text/css" href="css/animation.css">
-</head>
-<body>
-    <div class="wrap">
-        <!-- 명함 -->
-        <div class="common_box card_box">
-            <div class="card_left">
-                <div class="card_job">
-                    <!-- 이름 -->
-                    <span class="name_ko">채 유 정</span>
-                    <!-- 영문이름 -->
-                    <span class="name_eng">CHAE YOU JEONG</span>
-                    <!-- 직업 -->
-                    <span class="job">웹 개발자</span>
-                </div>
-                <div class="item_list">
-                    <div class="item_type">
-                        <span>Mail.</span>
-                        <span>Site.</span>
-                    </div>
-                    <div>
-                        <!-- 메일 -->
-                        <span>y2ll5wxxx@naver.com</span>
-                        <!-- 웹사이트 -->
-                        <span><a href="dbwjd3866.github.io">dbwjd3866.github.io</a></span>
-                    </div>
-                </div>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', path='/css/common.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', path='/css/design.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', path='/css/animation.css')}}"
+    />
 
-            </div>
-            <div class="card_right">
-                <div class="card_img"></div>
-            </div>
-            <div class="design_bar"></div>
-        </div>
-        <!-- SNS -->
-        <div class="common_box sns_box">
-            <div class="middle">
-                <a class="sns_btn" href="https://github.com/dbwjd3866" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="sns_btn" href="https://blog.naver.com/y2ll5w" target="_blank"><i class="fa-solid fa-blog"></i></a>
-                <a class="sns_btn" href="" target="_blank"><i class="fab fa-google"></i></a>
-                <a class="sns_btn" href="https://www.instagram.com/jjung._.you" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="sns_btn" href="" target="_blank"><i class="fab fa-youtube"></i></a>
-                <!--이력서 다운로드-->
-                <a class="sns_btn" href="./download/resume.pdf" download="resume.pdf"><i class="fas fa-file-download"></i></a>
-            </div>
-        </div>
-        
-        
-        <div class="common_box info_box">
-            <!-- Skill -->
-            <div class="sub_box skill_box">
-                <div class="sub_title">Skills</div>
-                <div class="bar_wrap">
-                    <div class="skill_title"><strong>Web</strong></div>
-                    <div><div class="bar_border"><div class="bar_fill" style="width: 80%">80%</div></div></div>
-                </div>
-
-                <div class="bar_wrap">
-                    <div class="skill_title"><strong>Git</strong></div>
-                    <div><div class="bar_border"><div class="bar_fill" style="width: 30%">30%</div></div></div>
-                </div>
-
-                <div class="bar_wrap">
-                    <div class="skill_title"><strong>Cloud</strong></div>
-                    <div><div class="bar_border"><div class="bar_fill" style="width: 50%">50%</div></div></div>
-                </div>
-
-                <div class="bar_wrap">
-                    <div class="skill_title"><strong>AI</strong></div>
-                    <div><div class="bar_border"><div class="bar_fill" style="width: 40%">40%</div></div></div>
-                </div>
-            </div>
-
-            <!-- License -->
-            <div class="sub_box">
-                <div class="sub_title">License</div>
-                <div class="item_list">
-                    <div class="item_type item_sign">
-                        <span>+ </span>
-                        <span>+ </span>
-                        <span>+ </span>
-                    </div>
-                    <div>
-                        <span>토익</span>
-                        <span>정보처리기사</span>
-                        <span>Sq
-                               ld</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work -->
-            <div class="sub_box">
-                <div class="sub_title">Project</div>
-                <div class="item_list">
-                    <div class="item_type item_sign">
-                        <span>+ </span>
-                        <span>+ </span>
-                    </div>
-                    <div>
-                        <span>인공지능 반려식물</span>
-                        <span>웹 사이트'에브리웨어'</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education -->
-            <div class="sub_box">
-                <div class="sub_title">Education</div>
-                <div class="item_list">
-                    <div class="item_type item_sign">
-                        <span>+ </span>
-                        <span>+ </span>
-                    </div>
-                    <div>
-                        <span>코멘토</span>
-                        <span>클라우드 자격증</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Award -->
-            <div class="sub_box">
-                <div class="sub_title">Awards</div>
-                <div class="item_list">
-                    <div class="item_type item_sign">
-                        <span>+ </span>
-                        <span>+ </span>
-                    </div>
-                    <div>
-                        <span>IT융합대학 아이디어 공모전 장려상</span>
-                        <span>썸썸프로젝트in경남 대상</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!--favicon-->
+    <link
+      rel="shortcut icon"
+      href="{{url_for('static', path='/img/favicon.ico')}}"
+    />
+  </head>
+  <body>
+    <div class="top_btn fix_btn"><i class="fas fa-arrow-up"></i></div>
+    <div class="chatbot_btn fix_btn"><i class="fas fa-robot"></i></div>
+    <div class="chatbot_close_btn fix_btn" onclick="close_chatbot()">
+      <i class="fas fa-times"></i>
     </div>
-</body>
+    <div class="kakao_btn fix_btn"><i class="fas fa-comment"></i></div>
+    <div class="kakao_close_btn fix_btn" onclick="close_kakao()">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <!-- KakaoTalk -->
+    <div class="window_wrap" id="kakao_wrap">
+      <div class="window_title">
+        <div>
+          <i class="fas fa-comment"></i>
+          <span>KAKAOTALK</span>
+        </div>
+        <div
+          class="window_close_btn"
+          id="kakao_window_close"
+          onclick="close_kakao()"
+        >
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="kakao_box">
+        <div class="msg_box" id="kakao_msg_box">
+          <div class="kakao_msg_info">
+            연락을 원하시면 언제든지 메세지를 보내주세요.
+          </div>
+          <form id="kakao_form">
+            <div class="kakao_input_area">
+              <div class="kakao_input_box">
+                <input
+                  type="text"
+                  name="kakao_name"
+                  class="kakao_input"
+                  id="kakao_name"
+                />
+                <label for="kakao_name" class="kakao_input_label">NAME</label>
+              </div>
+              <div class="kakao_input_box">
+                <input
+                  type="text"
+                  name="kakao_email"
+                  class="kakao_input"
+                  id="kakao_email"
+                />
+                <label for="kakao_email" class="kakao_input_label">EMAIL</label>
+              </div>
+              <div class="kakao_input_box">
+                <input
+                  type="text"
+                  name="kakao_message"
+                  class="kakao_input"
+                  id="kakao_message"
+                />
+                <label for="kakao_message" class="kakao_input_label"
+                  >MESSAGE</label
+                >
+              </div>
+              <button type="button" id="send_kakao_btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.998 4c-5.387 0-9.753 3.443-9.753 7.69 0 2.746 1.826 5.158 4.572 6.516-.15.515-.96 3.314-.992 3.535 0 0-.02.165.087.227a.295.295 0 00.232.015c.308-.044 3.564-2.327 4.127-2.72.572.08 1.15.118 1.727.117 5.387 0 9.754-3.443 9.754-7.69S17.384 4 11.998 4z"
+                    fill="#000"
+                    ,
+                    fill-opacity=".9"
+                  ></path>
+                </svg>
+                카카오톡 보내기
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+
+      <!-- chatbot -->
+      <div class="window_wrap" id="chatbot_wrap">
+          <div class="window_title">
+              <div>
+                  <i class="fas fa-robot"></i>
+                  <span>CHATBOT</span>
+              </div>
+              <div class="window_close_btn" id="chatbot_window_close" onclick="close_chatbot()"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="chatbot_box">
+              <div class="msg_box">
+                  <div class="chat_msg_box">
+                      <div class="chat_msg_box_left">
+                          <i class="fas fa-robot"></i>
+                      </div>
+                      <div class="chat_msg_box_right">
+                          <span class="chat_msg_date"></span>
+                          <span class="chat_msg_info">Hello, I'm Cholong. 무엇이든 물어보세요. </span>
+                      </div>
+                  </div>    
+              </div>
+              <div class="msg_input">
+                  <input id="send_chat_input" type="text" onkeypress="enter_keypress(event)"></input>
+                  <button id="send_chat_btn" type="button"><i class="fas fa-paper-plane"></i></button>
+              </div>
+          </div>
+      </div>
+
+      <!-- 명함 -->
+      <div class="common_box card_box">
+        <div class="card_left">
+          <div class="card_job">
+            <!-- 이름 -->
+            <span class="name_ko">채 유 정</span>
+            <!-- 영문이름 -->
+            <span class="name_eng">CHAE YOU JEONG</span>
+            <!-- 직업 -->
+            <span class="job">프로젝트 매니저</span>
+          </div>
+          <div class="item_list">
+            <div class="item_type">
+              <span>Mail.</span>
+              <span>Site.</span>
+            </div>
+            <div>
+              <!-- 메일 -->
+              <span>y2ll5wxxx@naver.com</span>
+              <!-- 웹사이트 -->
+              <span><a href="dbwjd3866.github.io">dbwjd3866.github.io</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="card_right">
+          <div class="card_img"></div>
+        </div>
+        <div class="design_bar"></div>
+      </div>
+      <!-- SNS -->
+      <div class="common_box sns_box">
+        <div class="middle">
+          <a class="sns_btn" href="https://github.com/dbwjd3866" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            class="sns_btn"
+            href="https://blog.naver.com/y2ll5w"
+            target="_blank"
+            ><i class="fa-solid fa-blog"></i
+          ></a>
+          <a class="sns_btn" href="" target="_blank"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="sns_btn"
+            href="https://www.instagram.com/jjung._.you"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a class="sns_btn" href="" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <!--이력서 다운로드-->
+          <a class="sns_btn" href="./download/resume.pdf" download="resume.pdf"
+            ><i class="fas fa-file-download"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="common_box info_box">
+        <!-- Skill -->
+        <div class="sub_box skill_box">
+          <div class="sub_title">Skills</div>
+          <div class="bar_wrap">
+            <div class="skill_title"><strong>Programming</strong></div>
+            <div>
+              <div class="bar_border">
+                <div class="bar_fill" style="width: 80%">80%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bar_wrap">
+            <div class="skill_title"><strong>OA</strong></div>
+            <div>
+              <div class="bar_border">
+                <div class="bar_fill" style="width: 30%">70%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bar_wrap">
+            <div class="skill_title"><strong>Cloud</strong></div>
+            <div>
+              <div class="bar_border">
+                <div class="bar_fill" style="width: 50%">60%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bar_wrap">
+            <div class="skill_title"><strong>AI</strong></div>
+            <div>
+              <div class="bar_border">
+                <div class="bar_fill" style="width: 40%">70%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- License -->
+        <div class="sub_box">
+          <div class="sub_title">License</div>
+          <div class="item_list">
+            <div class="item_type item_sign">
+              <span>+ </span>
+              <span>+ </span>
+              <span>+ </span>
+            </div>
+            <div>
+              <span>운전면허증</span>
+              <span>TOEIC-S 5급</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work -->
+        <div class="sub_box">
+          <div class="sub_title">Project</div>
+          <div class="item_list">
+            <div class="item_type item_sign">
+              <span>+ </span>
+              <span>+ </span>
+            </div>
+            <div>
+              <span>AI기반 하천 쓰레기 탐지 시스템</span>
+              <span>스트레칭 추천 웹 서비스'FitChing'</span>
+              <span>교내 장미축제 웹 서비스</span>
+              <span>AI기반 스마트 미러</span>
+              <span>커피 구독 웹 서비스'커피구독'(개발중)</span>
+              <span> AI 기반 노후 공공 시설물 제보 앱(개발중)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="sub_box">
+          <div class="sub_title">Education</div>
+          <div class="item_list">
+            <div class="item_type item_sign">
+              <span>+ </span>
+              <span>+ </span>
+            </div>
+            <div>
+              <span>코멘토</span>
+              <span>기업 연계 AI 융합 프로젝트</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Award -->
+        <div class="sub_box">
+          <div class="sub_title">Awards</div>
+          <div class="item_list">
+            <div class="item_type item_sign">
+              <span>+ </span>
+              <span>+ </span>
+            </div>
+            <div>
+              <span>'IT융합대학 아이디어 공모전' 장려상</span>
+              <span>'썸썸 프로젝트in경남' 대상</span>
+              <span>'핵심 역량 알고리즘 공모전' 장려상</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script
+    type=" text/javascript"
+    src="{{url_for('static', path='js/fnc.js')}}"
+  ></script>
 </html>
